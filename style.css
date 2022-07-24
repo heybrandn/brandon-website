@@ -1,16 +1,16 @@
 *{
-  color: white;
+  color: hotpink;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
-.banner {
-  width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url(https://imgur.com/Iphe9tw.png);
-  background-size: cover;
+body {
+  background-color: cyan;
   background-position: center;
-
+  background-size: cover;
+  border-bottom: -15px;
+  margin-bottom: -15px;
+  text-decoration: none;
 }
 .navbar {
   width: 85;
@@ -19,6 +19,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-decoration: none;
+  color: hotpink;
 }
 .logo {
   width: 120p;
@@ -28,18 +30,21 @@
   list-style: none;
   display: inline-block;
   margin: 0 20px;
+  text-decoration: none;
   position: relative;
 }
 .navbar ul li a {
   text-decoration: none;
-  color: #fff;
+  color: hotpink;
   text-transform: uppercase;
+  text-decoration: none;
 }
 .navbar ul li::after {
   content: '';
   height: 3px;
   width: 0;
-  background: #009688;
+  text-decoration: none;
+  background: blue;
   position: absolute;
   left: 0;
   bottom: -5px;
@@ -47,6 +52,7 @@
 }
 .navbar ul li:hover::after {
   width: 100%;
+  text-decoration: none;
 }
 .content {
   width: 100%;
@@ -54,45 +60,49 @@
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
+  text-decoration: none;
   color: #fff;
 }
 .content h1 {
   font-size: 70px;
+  text-decoration: none;
   margin-top: 80px;
 }
 .content p {
   margin: 20px auto;
   font-weight: 100;
-  line-heigh: 25px;
+  line-height: 25px;
+  text-decoration: none;
 }
-button {
-  width: 200px;
-  padding: 15px 0;
+.button {
+  display: inline;
+  width: auto;
+  padding: 5px;
   text-align: center;
-  margin: 20px 10px;
+  margin: 20px;
   border-radius: 25px;
   font-weight: bold;
-  border: 2px solid #009688;
+  border: 2px solid blue;
   color: #fff;
   background: transparent;
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  left: auto;
+  right: auto;
+  text-decoration: none;
 }
-span{
-  background: #009688;
-  height: 100%;
-  width: 0;
-  border-radius: 25px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-  transition: 0.5s;
+.button a {
+  text-decoration: none;
 }
-button:hover span {
-  width: 100%
+.button:hover span {
+  width: auto;
+  background: blue;
+  text-decoration: none;
+  border: 2px solid blue;
 }
-button:hover {
-  border: none;
+.button:hover {
+  background: blue;
+  text-decoration: none;
+  border: 2px solid blue;
 }
